@@ -1,0 +1,61 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hello News!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <header>
+        <!--marca-->
+        <div class="marca">
+            <img src="./logo.png" alt="">
+        </div>
+
+        <!--pesquisa-->
+        <div class="pesquisa">
+            <input id="busca" type="text" placeholder=" Digite aqui o que deseja pesquisar..." autofocus>
+            <button id="btnPesquisar">Pesquisar</button>
+        </div>
+
+    </header>
+
+    <section>
+        <!--assuntos-->
+        <div class="menu">
+            <h3 id="titulo">Assuntos do momento!</h3>
+            <ul>
+                <li onclick="buscarConteudo(null,'crime')" ><a href="">Criminalidade</a></li>
+                <li onclick="buscarConteudo(null,'culinary')" ><a href="">Culinária</a></li>
+                <li onclick="buscarConteudo(null,'soccer')" ><a href="">Futebol</a></li>
+                <li onclick="buscarConteudo(null,'medicine')" ><a href="">Medicina</a</li>
+                <li onclick="buscarConteudo(null,'music')" ><a href="">Música</a></li>
+                <li onclick="buscarConteudo(null,'politics')" ><a href="">Política</a</li>
+                <li onclick="buscarConteudo(null,'technology')" ><a href="">Tecnologia</a></li>
+                <li onclick="buscarConteudo(null,'television')" ><a href="">Televisão</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <article list-noticias></article>
+
+    <footer>
+        <!--rodape-->
+        <div class="rodape">
+            by Ítallo Corrêa de Almeida 
+            <br>
+            Notícias por <a href="https://newsapi.org">newsapi.org</a>
+        </div>
+
+    </footer>
+
+</body>
+<script src="./js/main.js"></script>
+
+</html>
